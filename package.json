@@ -1,0 +1,29 @@
+{
+  "license": "0BSD",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~52.0.31",
+    "expo-status-bar": "~2.0.1",
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "moment": "*",
+    "expo-image-picker": "~16.0.5",
+    "expo-secure-store": "~14.0.1",
+    "react-native-mmkv": "*",
+    "@expo/vector-icons": "^14.0.2",
+    "react-native-paper": "4.9.2",
+    "expo-document-picker": "~13.0.2",
+    "react-native-modal-datetime-picker": "*",
+    "@react-native-community/datetimepicker": "8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
