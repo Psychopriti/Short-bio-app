@@ -1,11 +1,50 @@
-# Sample Snack app
+# Short Bio App
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+This is a simple React Native app that allows users to create and save a short bio profile.  Users can set a profile picture, first name, last name, date of birth, nationality, and a short bio.  The data is persisted using MMKV for local storage.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Features
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+* Profile picture selection (from device gallery)
+* Input fields for first name, last name, date of birth, nationality, and bio
+* Data persistence using MMKV
+* Edit profile functionality
+* Form validation
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## Technologies Used
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+* React Native
+* Expo
+* react-native-mmkv
+* @react-native-community/datetimepicker (attempted)
+* expo-image-picker
+
+## Installation
+
+1. Clone the repository: `git clone <repository_url>`
+2. Navigate to the project directory: `cd short-bio-app-hw`
+3. Install dependencies: `npm install` or `yarn install`
+4. Run the app: `npx expo start` or `expo start`
+
+## How to Use
+
+1. Run the app on your device or emulator.
+2. The main screen displays the current profile information (if any).
+3. Tap the "Edit Profile" button to open the edit modal.
+4. In the modal, you can change the profile picture, first name, last name, date of birth, nationality, and bio.
+5. Tap "Save" to save the changes.
+6. Tap "Cancel" to close the modal without saving.
+
+## Complications
+
+I encountered difficulties while integrating the `@react-native-community/datetimepicker` component for the date of birth input. While I was able to display the date picker, I faced challenges with properly updating the state and handling date formatting consistently.  Due to these issues, the date picker functionality is not fully implemented in this version.  The current implementation uses a text input for the date of birth, which is not ideal for user experience.  Future development will focus on resolving these issues and providing a more user-friendly date selection experience.
+
+## Future Improvements
+
+* Implement a fully functional date picker.
+* Improve UI/UX.
+* Add more robust form validation.
+* Implement unit tests.
+
+## Author
+
+Juan Marenco 
